@@ -1,0 +1,31 @@
+@mixin resetPage {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+@mixin flexCenter($direction) {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: $direction;
+}
+
+$fa-font-path: "../webfonts";
+
+$purpleColor: #686de0;
+$textBack: #fff;
+$bodyBack: #c3cfe2;
+
+* {
+  @include resetPage();
+}
+
+body {
+  background-color: $bodyBack;
+  margin-top: 20px;
+}
+
+@import "./card";
+@import "./grid";
+@import "./social";

@@ -1,0 +1,77 @@
+.social-icons {
+  display: flex;
+  flex-direction: row-reverse;
+  ul {
+    position: fixed;
+    top: 30%;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    .icon-container {
+      padding-right: 20px;
+      transition: 0.5s;
+      transform: translate(115px);
+      &:hover {
+        transition: 0.5s;
+        transform: translate(5px, 0px);
+      }
+      p {
+        display: flex;
+        align-items: center;
+        color: white;
+        font-size: 0.8em;
+        margin-right: 15px;
+      }
+    }
+    .icon {
+      display: inline-block;
+      font: var(--fa-font-brands);
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+    }
+  }
+}
+
+.fb-color {
+  background-color: #3b5998;
+}
+
+.tw-color {
+  background-color: #00aced;
+}
+
+.gt-color {
+  background-color: #333;
+}
+
+.lk-color {
+  background-color: #007bb6;
+}
+
+.facebook::before {
+  content: ("\f39e");
+  font-size: 2em;
+  color: white;
+  padding: 30px 40px;
+}
+
+.twitter::before {
+  content: ("\f099");
+  font-size: 2em;
+  color: white;
+  padding: 30px 40px;
+}
+
+.github::before {
+  content: ("\f09b");
+  font-size: 2em;
+  color: white;
+  padding: 30px 40px;
+}
+
+.linkedin::before {
+  content: ("\f0e1");
+  font-size: 2em;
+  color: white;
+  padding: 30px 40px;
+}
